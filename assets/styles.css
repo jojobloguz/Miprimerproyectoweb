@@ -69,3 +69,15 @@ footer{ /* Estilos para el pie de página */
     padding: 10px;
     color: var(--accent-color);
 }
+
+.ig{
+    color:white
+}
+
+.lista-servicios{
+    list-style: none;
+}
+
+.servicios{
+    text-decoration: none;
+}
