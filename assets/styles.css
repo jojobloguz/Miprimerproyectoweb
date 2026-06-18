@@ -7,6 +7,7 @@
 *{
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
  :root {
@@ -22,6 +23,18 @@
      background-color:var(--primary-color);
 
  }
+
+ main{
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+        "bienvenida"
+        "descripcion"
+        "habilidades"
+        "imagen";
+ }
+
 
 .navbar{
     display:flex;
@@ -52,6 +65,21 @@
     font-weight: 700;
 }
 
+.section:nth-child(1){
+    grid-area: bienvenida;
+}
+
+.section:nth-child(2){
+    grid-area: descripcion;
+}
+
+.section:nth-child(3){
+    grid-area: habilidades;
+}
+
+.section:nth-child(4){
+    grid-area: imagen;
+}
 .card{ /* Estilos para las secciones */
     color: white;
     background-color: var(--secondary-color);
@@ -61,6 +89,10 @@
     padding: 20px;
     margin: 20px;
     gap: 1rem;
+}
+
+.articulo{
+    text-align: center;
 }
 
 footer{ /* Estilos para el pie de página */
@@ -74,10 +106,29 @@ footer{ /* Estilos para el pie de página */
     color:white
 }
 
-.lista-servicios{
+.lista-item{
     list-style: none;
 }
 
-.servicios{
+.item{
     text-decoration: none;
+}
+
+@media (min-width: 768px){
+    main{
+    grid-template-columns: repeat(2,minmax(200px, 1fr));
+    grid-template-areas: 
+        "bienvenida descripcion"
+        "habilidades imagen";
+    }
+}
+
+@media (min-width: 1024px){
+    main{
+    grid-template-columns: repeat(4,minmax(200px, 1fr));
+    grid-template-areas: 
+        "bienvenida"
+        "descripcion habilidades"
+        "imagen";
+    }
 }
