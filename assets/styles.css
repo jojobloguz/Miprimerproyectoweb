@@ -15,6 +15,7 @@
     --primary-color: hsl(200, 77%, 83%);
     --secondary-color: hsl(240, 78%, 51%);
     --accent-color: hsl(300, 78%, 51%);
+    --title-size: clamp(1.5rem, 5vw, 2.5rem)
  }
 
  body{ /* Estilos para el cuerpo de la página */
@@ -116,7 +117,7 @@ footer{ /* Estilos para el pie de página */
 
 @media (min-width: 768px){
     main{
-    grid-template-columns: repeat(2,minmax(200px, 1fr));
+    grid-template-columns: repeat(2,1fr);
     grid-template-areas: 
         "bienvenida descripcion"
         "habilidades imagen";
@@ -125,7 +126,7 @@ footer{ /* Estilos para el pie de página */
 
 @media (min-width: 1024px){
     main{
-    grid-template-columns: repeat(4,minmax(200px, 1fr));
+    grid-template-columns: repeat(4,1fr);
     grid-template-areas: 
         "bienvenida"
         "descripcion habilidades"
