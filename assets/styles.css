@@ -29,6 +29,7 @@
     display: grid;
     gap: 1rem;
     grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
     grid-template-areas: 
         "bienvenida"
         "descripcion"
@@ -37,7 +38,7 @@
  }
 
 
-.navbar{
+/*.navbar{
     display:flex;
     flex-direction: row;
     justify-content: space-between;
@@ -53,18 +54,23 @@
     padding: 0;
     gap: 1rem;
 }
-
-.nav-item{
-    text-decoration: none;
-    text-align: center;
+*/
+.nav-link{
+    color: var(--secondary-color);
 }
 
-.logo{ /* Estilos para el título principal */
+.navbar-brand{ /* Estilos para el título principal */
     color: var(--secondary-color);
     font-family: "Roboto", sans-serif;
     font-size: 2.5rem;
     font-weight: 700;
 }
+
+#galeriaCarousel{
+    margin: 20px;
+}
+
+
 
 .section:nth-child(1){
     grid-area: bienvenida;
@@ -81,7 +87,7 @@
 .section:nth-child(4){
     grid-area: imagen;
 }
-.card{ /* Estilos para las secciones */
+.card{ /* Estilos para las secciones*/
     color: white;
     background-color: var(--secondary-color);
     display:flex;
@@ -95,6 +101,7 @@
 .articulo{
     text-align: center;
 }
+
 
 footer{ /* Estilos para el pie de página */
     margin: 20px;

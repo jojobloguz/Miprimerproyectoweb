@@ -4,11 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi primer proyecto web</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
     <header>
-         <nav class="navbar">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+            <a class="navbar-brand">Jojo's</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/pages/sobre-mi.html">Sobre mi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/pages/proyectos.html">Proyectos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/pages/contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/pages/servicios.html">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn btn-primary" type="button" data-bs-toggle="modal"data-bs-target="#contactModal">Contacto</button>
+                    </li>
+                </ul>
+            </div>
+            </div>
+        </nav>
+        <!-- <nav class="navbar">
             <h1 class="logo">Jojo's</h1>
             <ul class="nav-menu">
                 <li class="nav-item"><a href="/index.html">Inicio</a></li>
@@ -17,10 +48,39 @@
                 <li class="nav-item"><a href="/Pages/contacto.html">Contacto</a></li>
                 <li class="nav-item"><a href="/Pages/servicios.html">Servicios</a></li>
             </ul>
-        </nav>
+        </nav> -->
+  
     </header>
     <main>
-        <section class="card">
+        <div id="galeriaCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+
+        <div class="carousel-item active">
+        <img src="assets/obelisco.jpg" class="d-block w-100" alt="Imagen 1">
+        </div>
+
+        <div class="carousel-item">
+        <img src="assets/paisaje.JPG" class="d-block w-100" alt="Imagen 2">
+        </div>
+
+        <div class="carousel-item">
+        <img src="assets/nieve.JPG" class="d-block w-100" alt="Imagen 3">
+        </div>
+
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#galeriaCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+        </button>
+
+        <button class="carousel-control-next" type="button" data-bs-target="#galeriaCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
+        </button>
+        </div>
+
+        <!--<section class="card">
             <article class="articulo">
                 <h2 class="subtitulo">Bienvenido a mi sitio web</h2>
                 <p>Hola, mi nombre es Joaquin Guzman</p>
@@ -51,13 +111,47 @@
             <figcaption>Paisaje de Bariloche</figcaption>
             </figure>
         </section>
+    -->
 
+        <div class="modal fade" id="contactModal">
+        <div class="modal-dialog">
+        <div class="modal-content">
+
+        <div class="modal-header">
+        <h5 class="modal-title">Contacto</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+
+        <div class="modal-body">
+        Completá este formulario:
+        <div class="mb-3">
+        <label class="form-label">Nombre</label>
+        <input type="text" class="form-control">
+        </div>
+        <div class="mb-3">
+        <label class="form-label">Email</label>
+        <input type="email" class="form-control">
+        </div>
+        <div class="mb-3">
+        <label class="form-label">Mensaje</label>
+        <textarea class="form-control" rows="3"></textarea>
+        </div>
+        </div>
+
+        <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+        <button type="button" class="btn btn-primary">Enviar</button>
+        </div>
+        </div>
+        </div>
+        </div>
     </main>
 
     <footer>
         <p>Instagram: <a class="ig" href="https://www.instagram.com/jjoaco.guzman/" target="_blank">@jjoaco.guzman</a></p>
         <p>&copy; 2026 Mi primer proyecto web. Todos los derechos reservados.</p>
     </footer>
-    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>
