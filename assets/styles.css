@@ -43,7 +43,7 @@
     color: var(--secondary-color);
 }
 
-.navbar-brand{ /* Estilos para el título principal */
+.logo{ /* Estilos para el título principal */
     color: var(--secondary-color);
     font-family: "Roboto", sans-serif;
     font-size: 2.5rem;
