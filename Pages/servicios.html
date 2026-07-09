@@ -15,7 +15,7 @@
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarSupportedContent">
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                 <ul class="navbar-nav">
                     <li class="nav-item">
                         <a class="nav-link" href="/index.html">Inicio</a>
@@ -42,57 +42,60 @@
     </header>
     
     <main>
-        <section class="card">
-            <article class="articulo">
-            <h2 class="subtitulo">Servicios</h2>
-            <p>Lista de mis servicios:</p>
-            <ul class="lista-item">
-                <li class="item">Trabajo en equipo</li>
-                <li class="item">Comunicación efectiva</li>
-                <li class="item">Resolución de problemas</li>
-            </ul>
-            </article>
+        <section class="my-5">
+            <div class="container">
+                    <div class="row justify-content-center g-4">
+                        <div class="col-12 col-md-10 col-lg-8">
+                            <div class="card" style="width: 100%; max-width: 520px; height: 420px;">
+                                <div class="card-body h-100 d-flex flex-column">
+                                    <img
+                                    src="../assets/servicios.jpg"
+                                    class="card-img-top"
+                                    alt="Foto de servicios"
+                                    style="height: 300px;object-fit: contain; object-position: center;"
+                                    />
+                                    <h5 class="card-title">Servicios</h5>
+                                    <p class="card-text">Ofrezco servicios de desarrollo web y programación.</p>
+                                </div>
+                            </div>
+                        </div>
         </section>
 
-        <section class="card">
-        <figure>
-            <img src="../assets/servicios.jpg" alt="Foto de servicios" width="400"/>
-            <figcaption>Foto de servicios</figcaption>
-        </figure>
+        <!--Contacto-->
+        <section>
+            <div class="modal fade" id="contactModal">
+            <div class="modal-dialog">
+            <div class="modal-content">
+
+            <div class="modal-header">
+            <h5 class="modal-title">Contacto</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+            </div>
+
+            <div class="modal-body">
+            Completá este formulario:
+            <div class="mb-3">
+            <label class="form-label">Nombre</label>
+            <input type="text" class="form-control">
+            </div>
+            <div class="mb-3">
+            <label class="form-label">Email</label>
+            <input type="email" class="form-control">
+            </div>
+            <div class="mb-3">
+            <label class="form-label">Mensaje</label>
+            <textarea class="form-control" rows="3"></textarea>
+            </div>
+            </div>
+
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+            <button type="button" class="btn btn-primary">Enviar</button>
+            </div>
+            </div>
+            </div>
+            </div>
         </section>
-
-        <div class="modal fade" id="contactModal">
-        <div class="modal-dialog">
-        <div class="modal-content">
-
-        <div class="modal-header">
-        <h5 class="modal-title">Contacto</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
-        </div>
-
-        <div class="modal-body">
-        Completá este formulario:
-        <div class="mb-3">
-        <label class="form-label">Nombre</label>
-        <input type="text" class="form-control">
-        </div>
-        <div class="mb-3">
-        <label class="form-label">Email</label>
-        <input type="email" class="form-control">
-        </div>
-        <div class="mb-3">
-        <label class="form-label">Mensaje</label>
-        <textarea class="form-control" rows="3"></textarea>
-        </div>
-        </div>
-
-        <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-        <button type="button" class="btn btn-primary">Enviar</button>
-        </div>
-        </div>
-        </div>
-        </div>
     </main>
 
     <footer>

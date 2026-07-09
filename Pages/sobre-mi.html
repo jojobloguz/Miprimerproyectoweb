@@ -15,7 +15,7 @@
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarSupportedContent">
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                 <ul class="navbar-nav">
                     <li class="nav-item">
                         <a class="nav-link" href="/index.html">Inicio</a>
@@ -42,60 +42,75 @@
     </header>
 
     <main>
-        <section class="card">
-            <article class="articulo">
-            <h2 class="subtitulo">Sobre mi</h2>
-                <p>Hola, mi nombre es Joaquin Guzman</p>
-                <p>Soy aspirante a programador</p>
-
-            </article>
+        <section class="my-5">
+            <div class="container">
+                    <div class="row justify-content-center g-4">
+                        <div class="col-12 col-md-6 col-lg-5">
+                            <div class="card" style="width: 100%; max-width: 520px; height: 420px;">
+                                <div class="card-body h-100 d-flex flex-column">
+                                    <h5 class="card-title">Hobbies</h5>
+                                    <p class="card-text">En mis tiempos libres me gusta andar en bicicleta</p>
+                                    <img
+                                    src="../assets/bicicletas.jpg"
+                                    class="card-img-top"
+                                    alt="Foto de bicicletas"
+                                    style="height: 300px;object-fit: contain; object-position: center;"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                    
+  
+                        <div class="col-12 col-md-6 col-lg-5">
+                            <div class="card" style="width: 100%; max-width: 520px; height: 420px;">
+                                <div class="card-body h-100 d-flex flex-column">
+                                        <h5 class="card-title">Sobre mi</h5>
+                                        <p class="card-text">Hola, mi nombre es Joaquin Guzman</p>
+                                        <p class="card-text">Soy aspirante a programador y actualmente me encuentro aprendiendo desarrollo web.
+                                            Me apasiona la tecnología y disfruto resolver problemas mediante el código. Mi objetivo es seguir mejorando mis habilidades
+                                            y participar en proyectos que me permitan crecer profesionalmente.</p>
+                                </div>                        
+                            </div>
+                        </div>
+                    </div>    
+            </div>
         </section>
 
-        <section class="card">
-            <article class="articulo"></article>
-            <h2 class="subtitulo">Hobbies</h2>
-            <p>En mis tiempos libres me gusta andar en bicicleta</p>
+        <!--Contacto-->
+        <section>
+            <div class="modal fade" id="contactModal">
+            <div class="modal-dialog">
+            <div class="modal-content">
+
+            <div class="modal-header">
+            <h5 class="modal-title">Contacto</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+            </div>
+
+            <div class="modal-body">
+            Completá este formulario:
+            <div class="mb-3">
+            <label class="form-label">Nombre</label>
+            <input type="text" class="form-control">
+            </div>
+            <div class="mb-3">
+            <label class="form-label">Email</label>
+            <input type="email" class="form-control">
+            </div>
+            <div class="mb-3">
+            <label class="form-label">Mensaje</label>
+            <textarea class="form-control" rows="3"></textarea>
+            </div>
+            </div>
+
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+            <button type="button" class="btn btn-primary">Enviar</button>
+            </div>
+            </div>
+            </div>
+            </div>
         </section>
-
-        <section class="card">
-        <figure>
-            <img src="../assets/bicicletas.jpg" alt="Foto de bicicletas" width="100"/>
-            <figcaption>Foto de bicicletas</figcaption>
-        </figure>
-        </section>
-
-        <div class="modal fade" id="contactModal">
-        <div class="modal-dialog">
-        <div class="modal-content">
-
-        <div class="modal-header">
-        <h5 class="modal-title">Contacto</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
-        </div>
-
-        <div class="modal-body">
-        Completá este formulario:
-        <div class="mb-3">
-        <label class="form-label">Nombre</label>
-        <input type="text" class="form-control">
-        </div>
-        <div class="mb-3">
-        <label class="form-label">Email</label>
-        <input type="email" class="form-control">
-        </div>
-        <div class="mb-3">
-        <label class="form-label">Mensaje</label>
-        <textarea class="form-control" rows="3"></textarea>
-        </div>
-        </div>
-
-        <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-        <button type="button" class="btn btn-primary">Enviar</button>
-        </div>
-        </div>
-        </div>
-        </div>
     </main>
 
      <footer>
