@@ -28,3 +28,4 @@ Abrir `index.html` en el navegador (o desplegar el repositorio si se realiza con
 
 ## Link
 - Repositorio en GitHub: https://github.com/jojobloguz/Miprimerproyectoweb
+- Sitio desplegado (GitHub Pages): https://jojobloguz.github.io/Miprimerproyectoweb/
