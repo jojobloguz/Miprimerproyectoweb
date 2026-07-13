@@ -56,19 +56,6 @@
 
 }
 
-/*
-.container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-*/
-.mi-cont{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .articulo{
     text-align: center;
 }
