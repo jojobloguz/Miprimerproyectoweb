@@ -11,44 +11,47 @@
 
 :root {
   font-family: "Montserrat", sans-serif;
-  --primary-color: hsl(200, 77%, 83%);
-  --secondary-color: hsl(240, 78%, 51%);
-  --accent-color: hsl(300, 78%, 51%);
-  --title-size: clamp(1.5rem, 5vw, 2.5rem) ;
 }
 
 body { /* Estilos para el cuerpo de la página */
   margin: 0;
   font-family: "Montserrat", sans-serif;
-  background-color: var(--primary-color);
+  background-color: hsl(200, 77%, 83%);
 }
 
 /*font-family: "Roboto", sans-serif;*/
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
 .footer { /* Estilos para el pie de página */
   margin: 20px;
-  background-color: var(--secondary-color);
+  background-color: hsl(240, 78%, 51%);
   padding: 10px;
-  color: var(--accent-color);
+  color: hsl(300, 78%, 51%);
 }
 .footer .ig {
   color: white;
 }
 
-.logo { /* Estilos para el título principal */
-  color: var(--secondary-color);
+.logo {
+  color: hsl(240, 78%, 51%);
   font-family: "Roboto", sans-serif;
   font-size: 2.5rem;
   font-weight: 700;
 }
-.logo .nav-item {
+
+.nav-item {
   margin-right: 20px;
 }
-.logo .nav-item .nav-link {
-  color: var(--secondary-color);
+.nav-link {
+  color: hsl(240, 78%, 51%);
 }
 
 .contacto-modal {
-  background-color: var(--accent-color);
+  background-color: hsl(300, 78%, 51%);
   color: white;
   border: none;
   padding: 10px 20px;
@@ -57,13 +60,44 @@ body { /* Estilos para el cuerpo de la página */
   border-radius: 5px;
   transition: background-color 0.3s ease;
 }
+.contacto-modal:hover {
+  background-color: hsl(300, 78%, 41%);
+}
+
+.boton-cancelar {
+  background-color: hsl(240, 78%, 51%);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 1rem;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+.boton-cancelar:hover {
+  background-color: hsl(240, 78%, 41%);
+}
+
+.boton-enviar {
+  background-color: hsl(300, 78%, 51%);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 1rem;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+.boton-enviar:hover {
+  background-color: hsl(300, 78%, 41%);
+}
 
 .card { /* Estilos para las secciones*/
-  color: white;
-  background-color: var(--secondary-color);
   display: flex;
   justify-content: center;
-  text-align: center;
+  align-items: center;
+  color: white;
+  background-color: hsl(240, 78%, 51%);
 }
 
 .container-carousel {

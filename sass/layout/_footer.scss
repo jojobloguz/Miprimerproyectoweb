@@ -1,8 +1,10 @@
+@use "../utilities/variables" as *;
+
 .footer{ /* Estilos para el pie de página */
     margin: 20px;
-    background-color: var(--secondary-color);
+    background-color: $secondary-color;
     padding: 10px;
-    color: var(--accent-color);
+    color: $accent-color;
     .ig{
     color:white
     }

@@ -1,10 +1,14 @@
-.contacto-modal{
-    background-color: var(--accent-color);
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    text-decoration: none;
-    font-size: 1rem;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+
+.contacto-modal {
+    @include button-style($accent-color, white);
+}
+
+.boton-cancelar {
+    @include button-style($secondary-color, white);
+}
+
+.boton-enviar {
+    @include button-style($accent-color, white);
 }
