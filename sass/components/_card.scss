@@ -5,4 +5,24 @@
     @include flex-center;
     color: white;
     background-color: $secondary-color;
+    transform: translateY(0) scale(1) rotate(0deg);
+    transition: transform 300ms ease, box-shadow 300ms ease;
+    will-change: transform;
+    animation: card-pop 600ms ease;
+    &:hover {
+    transform: translateY(-6px) scale(1.03) rotate(-1deg);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+  }
 }
+
+@keyframes card-pop {
+  from {
+    opacity: 0;
+    transform: translateY(18px) scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
