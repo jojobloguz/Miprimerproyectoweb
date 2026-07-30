@@ -26,10 +26,13 @@ body { /* Estilos para el cuerpo de la página */
   margin: 20px;
   background-color: hsl(240, 78%, 51%);
   padding: 10px;
-  color: hsl(300, 78%, 51%);
+  color: white;
 }
 .footer .ig {
-  color: white;
+  color: hsl(200, 77%, 83%);
+}
+.footer .ig:hover {
+  color: hsl(182, 62%, 53%);
 }
 
 .logo {
@@ -46,8 +49,26 @@ body { /* Estilos para el cuerpo de la página */
   color: hsl(240, 78%, 51%);
 }
 
+.seccion-titulo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.seccion-titulo .titulo {
+  font-size: 2.5rem;
+  color: hsl(240, 78%, 51%);
+  margin-bottom: 1rem;
+}
+.seccion-titulo .texto-descripcion {
+  color: hsl(240, 78%, 51%);
+  font-size: 1.2rem;
+}
+
 .contacto-modal {
-  background-color: hsl(300, 78%, 51%);
+  background-color: hsl(182, 62%, 53%);
   color: white;
   border: none;
   padding: 10px 20px;
@@ -57,7 +78,7 @@ body { /* Estilos para el cuerpo de la página */
   transition: background-color 0.3s ease;
 }
 .contacto-modal:hover {
-  background-color: hsl(300, 78%, 41%);
+  background-color: hsl(182, 62%, 43%);
 }
 
 .boton-cancelar {
@@ -75,7 +96,7 @@ body { /* Estilos para el cuerpo de la página */
 }
 
 .boton-enviar {
-  background-color: hsl(300, 78%, 51%);
+  background-color: hsl(182, 62%, 53%);
   color: white;
   border: none;
   padding: 10px 20px;
@@ -85,7 +106,7 @@ body { /* Estilos para el cuerpo de la página */
   transition: background-color 0.3s ease;
 }
 .boton-enviar:hover {
-  background-color: hsl(300, 78%, 41%);
+  background-color: hsl(182, 62%, 43%);
 }
 
 .card { /* Estilos para las secciones*/

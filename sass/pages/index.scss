@@ -1,0 +1,18 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+
+.seccion-titulo{
+    @include flex-center;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    .titulo{
+    font-size: 2.5rem;
+    color: $secondary-color;
+    margin-bottom: 1rem;
+    }
+    .texto-descripcion{
+    color: $secondary-color;
+    font-size: 1.2rem;
+    }
+}
